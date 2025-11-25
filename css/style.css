@@ -5,17 +5,13 @@
 
 }
 .header{
-  min-height: 100vh;
-  width: 100%;
-  background-image: 
-  linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),
-  url('../images/Untitled-design-18-1.webp');
-
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+	min-height: 110vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url('../images/Untitled-design-18-1.webp');
+	background-position: center;
+	background-size: cover;
+	position: relative;
 }
-
 nav{
 	display: flex;
 	padding: 2% 6%;
@@ -339,7 +335,7 @@ h3{
 .sub-header{
 	height: 50vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url('../images/background.jpg');
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url('../images/apple-iphone-14-pro-5.jpg');
 	background-position: center;
 	background-size: cover;
 	text-align: center;
@@ -559,16 +555,48 @@ h3{
   cursor: pointer;
 }
 
-.sub-header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7),
-  rgba(4, 9, 30, 0.7)), url('../images/apple-iphone-14-pro-5.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  color: #fff;
+@media (max-width: 700px) {
+  .header{
+    min-height: 50vh;
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
 
+.gallery-grid{display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+	gap:14px
+}
+.gallery-item{border-radius:12px;
+	overflow:hidden;
+	position:relative;
+	cursor:pointer
 
+}
+.gallery-item img{width:100%;
+	height:100%;
+	object-fit:cover;
+	display:block;
+	transition:transform .45s
+}
+.gallery-item:hover img{transform:scale(1.06)
+}
+.gallery-caption{position:absolute;
+	left:0;right:0;bottom:0;
+	padding:10px;
+	background:linear-gradient(180deg,transparent,rgba(0,0,0,0.6));
+	color:#fff;
+	font-weight:600
+}
+
+@media (max-width: 700px) {
+  .sub-header{
+    min-height: 50vh;
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
