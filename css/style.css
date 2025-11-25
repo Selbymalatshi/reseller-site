@@ -559,19 +559,16 @@ h3{
   cursor: pointer;
 }
 
-@media (max-width: 700px) {
-  .header{
-    min-height: auto;
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
+.sub-header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7),
+  rgba(4, 9, 30, 0.7)), url('../images/apple-iphone-14-pro-5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
 }
 
-@media (max-width: 700px){
-  .text-box{
-    width: 95%;
-    top: 55%;
-  }
-}
+
