@@ -39,6 +39,8 @@ nav img{
 	display: block;
 	margin: auto;
 	transition: 0.5s;
+	z-index: 1000;
+
 }
 .nav-links ul li:hover::after{
 	width: 100%;
@@ -729,3 +731,4 @@ h3{
     height: 160px;
   }
 }
+
